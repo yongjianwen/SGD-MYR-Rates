@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGD MYR Rates</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2150/2150150.png">
+    <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="header">SGD MYR Rates</div>
+        <table class="data-table">
+            <tr>
+                <td><a href="https://www.cimbclicks.com.sg/sgd-to-myr" target="_blank" rel="noopener noreferrer"><img
+                            src="https://companieslogo.com/img/orig/1023.KL_BIG-dc0f4038.png?t=1720244490" alt="CIMB"
+                            class="cimb-logo"></a></td>
+                <td class="result">
+                    <div class="double-data">
+                        <span id="cimb">N/A</span>
+                        <span class="diff"></span>
+                    </div>
+                </td>
+                <td><i class="status-icon material-icons inactive">check_circle</i></td>
+            </tr>
+            <tr>
+                <td><a href="https://wise.com/gb/send-money/?sourceCurrency=SGD&targetCurrency=MYR&sourceAmount=1000"
+                        target="_blank" rel="noopener noreferrer"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Wise_Logo_512x124.svg" alt="Wise"
+                            class="wise-logo"></a></td>
+                <td class="result">
+                    <div class="double-data">
+                        <span id="wise">N/A</span>
+                        <span class="diff"></span>
+                    </div>
+                </td>
+                <td><i class="status-icon material-icons inactive">check_circle</i></td>
+            </tr>
+        </table>
+        <div class="message">Auto refresh in <span id="countdown">0</span> seconds</div>
+    </div>
+    <div class="card">
+        <label for="amount" class="input-label">Enter Amount (SGD)</label>
+        <input type="number" id="amount" class="number-input" placeholder="0.00" min="0">
+    </div>
+</body>
+
+</html>

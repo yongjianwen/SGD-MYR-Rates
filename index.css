@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.data-table tr {
+    transition: background-color 0.2s ease;
+}
+
+.data-table tr:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.data-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.data-table td {
+    padding: 12px 16px;
+    color: #333;
+}
+
+.data-table td:first-child {
+    font-weight: 600;
+    color: #2c3e50;
+    width: 45%;
+}
+
+.data-table td.result {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2c3e50;
+    width: 45%;
+}
+
+.data-table td:last-child {
+    text-align: center;
+    width: 10%;
+    padding: 12px 4px;
+}
+
+.cimb-logo {
+    height: 20px;
+    padding: 5px 0;
+}
+
+.wise-logo {
+    height: 30px;
+}
+
+.double-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.diff {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.status-icon {
+    font-size: 20px;
+}
+
+.status-icon.active {
+    color: #27ae60;
+}
+
+.status-icon.inactive {
+    color: #cccccc;
+}
+
+.message {
+    margin: 2px 0 0 0;
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.header {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.number-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.number-input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.2);
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(39, 174, 96, 0.2);
+    border-radius: 50%;
+    border-top-color: #27ae60;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
