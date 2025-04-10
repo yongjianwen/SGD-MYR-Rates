@@ -110,6 +110,8 @@ async function fetchRates(value) {
                 if (value === maxValue) {
                     checkIcon.classList.add('active');
                     checkIcon.classList.remove('inactive');
+
+                    valueCell.querySelector('.diff').innerHTML = '';
                 } else {
                     checkIcon.classList.add('inactive');
                     checkIcon.classList.remove('active');
