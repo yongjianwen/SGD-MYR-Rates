@@ -6,6 +6,7 @@ const refreshInterval = 60000; // 60 seconds
 const tableRows = document.querySelectorAll('.data-table tr');
 const cimb = document.querySelector('#cimb');
 const wise = document.querySelector('#wise');
+const panda = document.querySelector('#panda');
 const countdown = document.querySelector('#countdown');
 const amountInput = document.getElementById('amount');
 
@@ -32,6 +33,7 @@ amountInput.addEventListener('input', function (e) {
     if (!value) {
         cimb.innerHTML = 'N/A';
         wise.innerHTML = 'N/A';
+        panda.innerHTML = 'N/A';
 
         tableRows.forEach(row => {
             const valueCell = row.querySelector('.result');
@@ -85,6 +87,7 @@ async function fetchRates(value) {
         .then(json => {
             cimb.innerHTML = json['cimb'].toFixed(2);
             wise.innerHTML = json['wise'].toFixed(2);
+            panda.innerHTML = json['panda'].toFixed(2);
 
             const values = [];
 
@@ -118,11 +121,13 @@ async function fetchRates(value) {
 
             cimb.innerHTML = 'RM ' + json['cimb'].toFixed(2);
             wise.innerHTML = 'RM ' + json['wise'].toFixed(2);
+            panda.innerHTML = 'RM ' + json['panda'].toFixed(2);
         })
         .catch(error => {
             console.error(error)
             cimb.innerHTML = 'N/A';
             wise.innerHTML = 'N/A';
+            panda.innerHTML = 'N/A';
 
             tableRows.forEach(row => {
                 const checkIcon = row.querySelector('.status-icon');

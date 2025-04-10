@@ -72,6 +72,11 @@ body {
     height: 30px;
 }
 
+.panda-logo {
+    height: 25px;
+    padding: 2.5px 0;
+}
+
 .double-data {
     display: flex;
     flex-direction: column;
