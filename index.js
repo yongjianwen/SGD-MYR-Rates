@@ -1,4 +1,5 @@
-const baseUrl = 'https://sgd-myr-rates-api-production.up.railway.app/';
+// const baseUrl = 'https://sgd-myr-rates-api-production.up.railway.app/';
+const baseUrl = 'https://sgd-myr-rates-api.onrender.com/';
 const ratesUrl = baseUrl + 'rates/';
 
 const refreshInterval = 60000; // 60 seconds
