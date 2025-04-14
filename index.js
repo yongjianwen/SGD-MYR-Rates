@@ -1,5 +1,6 @@
-// const baseUrl = 'https://sgd-myr-rates-api-production.up.railway.app/';
-const baseUrl = 'https://sgd-myr-rates-api.onrender.com/';
+// const baseUrl = 'https://sgd-myr-rates-api-production.up.railway.app/'; // Free credit, will use up
+// const baseUrl = 'https://sgd-myr-rates-api.onrender.com/';  // Render will sleep after 15 minutes, slow first call
+const baseUrl = 'https://yongjianwen-rates.hf.space/';  // Best way
 const ratesUrl = baseUrl + 'rates/';
 
 const refreshInterval = 60000; // 60 seconds
